@@ -5,6 +5,18 @@ authors = ["László Nagy <rizsotto at gmail dot com>"]
 license = "MIT"
 description = "BuildEAR is a tool that generates a compilation database for clang tooling."
 
+[[bin]]
+name = "bear"
+path = "src/main.rs"
+
+[[bin]]
+name = "bear-cc"
+path = "src/wrapper.rs"
+
+[[bin]]
+name = "bear-cxx"
+path = "src/wrapper.rs"
+
 [dependencies]
 serde = "0.9"
 serde_derive = "0.9"
